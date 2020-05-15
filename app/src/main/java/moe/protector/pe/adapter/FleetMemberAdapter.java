@@ -30,6 +30,7 @@ public class FleetMemberAdapter extends RecyclerView.Adapter<FleetMemberAdapter.
         TextView textViewName;
         TextView textViewLevel;
         TextView textViewHp;
+        TextView textViewExp;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -37,6 +38,7 @@ public class FleetMemberAdapter extends RecyclerView.Adapter<FleetMemberAdapter.
             textViewName = itemView.findViewById(R.id.fleet_item_name);
             textViewLevel = itemView.findViewById(R.id.fleet_item_level);
             textViewHp = itemView.findViewById(R.id.fleet_item_hp);
+            textViewExp = itemView.findViewById(R.id.fleet_item_exp);
         }
     }
 
@@ -57,6 +59,7 @@ public class FleetMemberAdapter extends RecyclerView.Adapter<FleetMemberAdapter.
         viewHolder.textViewName.setText(fleetMember.getName());
         viewHolder.textViewLevel.setText(fleetMember.getLevel());
         viewHolder.textViewHp.setText(fleetMember.getHp());
+        viewHolder.textViewExp.setText(fleetMember.getExp());
     }
 
     @Override

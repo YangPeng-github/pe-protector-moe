@@ -36,4 +36,23 @@ public class CommonUtil {
     public static int randomInt(int min, int max) {
         return (int) (min + Math.random() * (max - min + 1));
     }
+
+    /**
+     * 大数字转换KM
+     * @param num
+     * @return
+     */
+    public static String numberToKM(int num) {
+        if (num<=0) {
+            return "0";
+        }
+        String strNum= num+"";
+        if (num > 1000 && num <=1000000) {
+            strNum = strNum.substring(0, strNum.length() - 3)+"k";
+        } else if(num >1000000){
+            strNum = strNum.substring(0, strNum.length() - 6)+"m";
+        }
+        return strNum;
+    }
+
 }

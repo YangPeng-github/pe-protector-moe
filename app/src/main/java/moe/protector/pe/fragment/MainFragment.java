@@ -24,6 +24,7 @@ import moe.protector.pe.R;
 import moe.protector.pe.adapter.FleetViewPagerAdapter;
 import moe.protector.pe.bean.common.FleetVo;
 import moe.protector.pe.game.UserData;
+import moe.protector.pe.util.CommonUtil;
 import moe.protector.pe.util.EventBusUtil;
 import moe.protector.pe.view.FleetRecyclerView;
 
@@ -141,10 +142,10 @@ public class MainFragment extends Fragment {
             TextView ship = view.findViewById(R.id.tv_ship);
             TextView equipment = view.findViewById(R.id.tv_equipment);
             TextView repair = view.findViewById(R.id.tv_repair);
-            oil.setText(String.valueOf(userData.userBaseData.userVo.oil));
-            ammo.setText(String.valueOf(userData.userBaseData.userVo.ammo));
-            steel.setText(String.valueOf(userData.userBaseData.userVo.steel));
-            aluminium.setText(String.valueOf(userData.userBaseData.userVo.aluminium));
+            oil.setText(CommonUtil.numberToKM(userData.userBaseData.userVo.oil));
+            ammo.setText(CommonUtil.numberToKM(userData.userBaseData.userVo.ammo));
+            steel.setText(CommonUtil.numberToKM(userData.userBaseData.userVo.steel));
+            aluminium.setText(CommonUtil.numberToKM(userData.userBaseData.userVo.aluminium));
             qz.setText(String.valueOf(userData.packageGet(UserData.PACKAGE_DD_CUBE)));
             xy.setText(String.valueOf(userData.packageGet(UserData.PACKAGE_CL_CUBE)));
             zl.setText(String.valueOf(userData.packageGet(UserData.PACKAGE_BB_CUBE)));

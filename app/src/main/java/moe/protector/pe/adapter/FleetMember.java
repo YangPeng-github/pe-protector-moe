@@ -12,6 +12,7 @@ public class FleetMember {
     private int index;
     private int level;
     private int hp;
+    private int exp;
     private int hpMax;
     private String photo;
 
@@ -35,6 +36,10 @@ public class FleetMember {
         return hp + "/" + hpMax;
     }
 
+    public String getExp() {
+        return exp+"";
+    }
+
     public FleetMember(int id) {
         UserShipVO userShipVO = userData.allShip.get(id);
         this.id = id;
@@ -48,6 +53,7 @@ public class FleetMember {
         this.hpMax = userShipVO.battlePropsMax.hp;
         this.level = userShipVO.level;
         this.photo = "html/images/ship/" + this.index + ".png";
+        this.exp = userShipVO.exp;
     }
 
 }

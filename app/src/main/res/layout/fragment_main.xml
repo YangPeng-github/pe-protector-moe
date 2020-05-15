@@ -9,13 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginLeft="@dimen/cardMarginHorizontal"
-        android:layout_marginRight="@dimen/cardMarginHorizontal">
-        <include layout="@layout/material_view_pager_placeholder"/>
-
-
-
+        android:orientation="vertical">
+       <!-- 运行状态-->
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,7 +25,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="运行状态"/>
-
                 <TextView
                     android:id="@+id/tv_now_task"
                     android:layout_width="wrap_content"
@@ -44,21 +38,14 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv_now_task"
                     android:text="00:00:00 [主线程] 主线程已开启"/>
-
-
             </RelativeLayout>
-
-
-
         </android.support.v7.widget.CardView>
-
-
+        <!--资源数据-->
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             app:cardCornerRadius="5dp">
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -68,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="资源数量"/>
-
+                <!--资源数据-->
                 <RelativeLayout
                     android:id="@+id/ly_main"
                     android:layout_width="match_parent"
@@ -83,14 +70,12 @@
                         android:layout_height="match_parent"
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="5dp" />
-
                     <TextView
                         android:id="@+id/tv_oil"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@+id/img_oil"
-                        android:text="10000" />
-
+                        android:text="100" />
 
                     <ImageView
                         android:id="@+id/img_ammo"
@@ -100,14 +85,12 @@
                         android:layout_toEndOf="@id/tv_oil"
                         android:layout_marginStart="10dp"
                         />
-
                     <TextView
                         android:id="@+id/tv_ammo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@+id/img_ammo"
-                        android:text="10000" />
-
+                        android:text="100" />
 
                     <ImageView
                         android:id="@+id/img_steel"
@@ -117,14 +100,12 @@
                         android:layout_toEndOf="@id/tv_ammo"
                         android:layout_marginStart="10dp"
                         />
-
                     <TextView
                         android:id="@+id/tv_steel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@+id/img_steel"
-                        android:text="10000" />
-
+                        android:text="100" />
 
                     <ImageView
                         android:id="@+id/img_aluminium"
@@ -134,17 +115,14 @@
                         android:layout_toEndOf="@id/tv_steel"
                         android:layout_marginStart="10dp"
                         />
-
                     <TextView
                         android:id="@+id/tv_aluminium"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@+id/img_aluminium"
-                        android:text="10000" />
-
-
+                        android:text="100" />
                 </RelativeLayout>
-
+                <!--核心数据-->
                 <RelativeLayout
                     android:id="@+id/ly_package"
                     android:layout_width="match_parent"
@@ -157,14 +135,12 @@
                         android:layout_height="match_parent"
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="5dp" />
-
                     <TextView
                         android:id="@+id/tv_qz"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@+id/img_qz"
-                        android:text="10000" />
-
+                        android:text="100" />
 
                     <ImageView
                         android:id="@+id/img_xy"
@@ -174,14 +150,12 @@
                         android:layout_toEndOf="@id/tv_qz"
                         android:layout_marginStart="10dp"
                         />
-
                     <TextView
                         android:id="@+id/tv_xy"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@+id/img_xy"
-                        android:text="10000" />
-
+                        android:text="100" />
 
                     <ImageView
                         android:id="@+id/img_zl"
@@ -191,14 +165,12 @@
                         android:layout_toEndOf="@id/tv_xy"
                         android:layout_marginStart="10dp"
                         />
-
                     <TextView
                         android:id="@+id/tv_zl"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@+id/img_zl"
-                        android:text="10000" />
-
+                        android:text="100" />
 
                     <ImageView
                         android:id="@+id/img_hm"
@@ -208,13 +180,12 @@
                         android:layout_toEndOf="@id/tv_zl"
                         android:layout_marginStart="10dp"
                         />
-
                     <TextView
                         android:id="@+id/tv_hm"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@+id/img_hm"
-                        android:text="10000" />
+                        android:text="100" />
 
                     <ImageView
                         android:id="@+id/img_qt"
@@ -224,16 +195,15 @@
                         android:layout_toEndOf="@id/tv_hm"
                         android:layout_marginStart="10dp"
                         />
-
                     <TextView
                         android:id="@+id/tv_qt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@+id/img_qt"
-                        android:text="10000" />
+                        android:text="100" />
 
                 </RelativeLayout>
-
+                <!--船装备快修-->
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -279,14 +249,10 @@
                         android:layout_height="wrap_content"
                         android:text="1000"
                         android:layout_toEndOf="@+id/img_repair"/>
-
-
-
                 </RelativeLayout>
-
             </RelativeLayout>
         </android.support.v7.widget.CardView>
-
+       <!-- 舰队部署-->
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -301,79 +267,64 @@
                     android:layout_height="wrap_content"
                     android:text="舰队部署"
                     android:gravity="center"/>
-
                 <android.support.v4.view.ViewPager
                     android:id="@+id/view_page_fleet"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="120dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="20dp">
                 </android.support.v4.view.ViewPager>
             </RelativeLayout>
         </android.support.v7.widget.CardView>
-
-<!--        <android.support.v7.widget.CardView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            app:cardCornerRadius="5dp">-->
-<!--            <RelativeLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content">-->
-<!--                <TextView-->
-<!--                    android:id="@+id/title_repair_dock"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="澡堂"-->
-<!--                    android:gravity="center"/>-->
-<!--                <RelativeLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="10dp"-->
-<!--                    android:layout_marginBottom="10dp"-->
-<!--                    android:layout_marginTop="20dp">-->
-<!--                    <LinearLayout-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:gravity="center_horizontal">-->
-
-<!--                        <RelativeLayout-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="40dp"-->
-<!--                            android:layout_weight="1"/>-->
-
-
-<!--                        <RelativeLayout-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="40dp"-->
-<!--                            android:layout_weight="1">-->
-
-
-
-<!--                        </RelativeLayout>-->
-<!--                        <RelativeLayout-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="40dp"-->
-<!--                            android:layout_weight="1">-->
-
-
-
-<!--                        </RelativeLayout>-->
-<!--                        <RelativeLayout-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="40dp"-->
-<!--                            android:layout_weight="1">-->
-
-
-
-<!--                        </RelativeLayout>-->
-<!--                    </LinearLayout>-->
-<!--                </RelativeLayout>-->
-
-<!--            </RelativeLayout>-->
-<!--        </android.support.v7.widget.CardView>-->
-
+        <!--澡堂-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/title_repair_dock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="澡堂"
+                    android:gravity="center"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"/>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_weight="1">
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_weight="1">
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_weight="1">
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
